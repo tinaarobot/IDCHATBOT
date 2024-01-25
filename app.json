@@ -1,6 +1,6 @@
 {
   "name": "ChatBot",
-  "description": "A telegram bot",
+  "description": "A telegram chatting userbot",
   "logo": "https://te.legra.ph/file/dc32c85de4f1ad9b3456b.jpg",
   "keywords": [
     "Chatbot",
@@ -11,7 +11,7 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/venombolteop/ChatbotV2",
+  "repository": "https://github.com/venombolteop/ChatBot",
   "env": {
     "API_ID": {
       "description": "Get this value from my.telegram.org/apps.",
@@ -23,8 +23,8 @@
       "required": true,
       "value": ""
     },
-    "BOT_TOKEN": {
-      "description": "A Bot token from @BotFather",
+    "STRING_SESSION": {
+      "description": "A Pyrogram v2 String session from @Venom_String_robot",
       "required": true,
       "value": ""
     },
