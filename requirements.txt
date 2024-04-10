@@ -7,3 +7,4 @@ dnspython
 tgcrypto==1.2.5
 asyncio==3.4.3
 python-dotenv==1.0.1
+cachetools
