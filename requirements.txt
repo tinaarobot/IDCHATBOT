@@ -2,9 +2,8 @@ Abg==2.3.8
 pyrogram==2.0.106
 pymongo==4.6.3
 motor==3.4.0
-requests==2.31.0
+requests
 dnspython
 tgcrypto==1.2.5
 asyncio==3.4.3
-python-dotenv==1.0.1
-cachetools
+python-dotenv
