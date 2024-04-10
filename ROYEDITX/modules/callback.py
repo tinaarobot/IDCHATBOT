@@ -1,9 +1,9 @@
 from pyrogram.enums import ChatMemberStatus as CMS
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 
-from Venom import VenomX
-from Venom.database import vick
-from Venom.modules.helpers import (
+from ROYEDITX import ROYX
+from ROYEDITX.database import vick
+from ROYEDITX.modules.helpers import (
     ABOUT_BTN,
     ABOUT_READ,
     ADMIN_READ,
@@ -20,7 +20,7 @@ from Venom.modules.helpers import (
 )
 
 
-@VenomX.on_callback_query()
+@ROYX.on_callback_query()
 async def cb_handler(_, query: CallbackQuery):
     if query.data == "HELP":
         await query.message.edit_text(
