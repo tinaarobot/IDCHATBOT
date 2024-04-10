@@ -1,7 +1,7 @@
 {
   "name": "ID-CHATBOT",
-  "description": "A telegram chatting userbot",
-  "logo": "https://te.legra.ph/file/dc32c85de4f1ad9b3456b.jpg",
+  "description": "♥︎ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴜsᴇʀ ɪᴅ ᴄʜsᴛʙᴏᴛ ʙʏ - ʀᴏʏ-ᴇᴅɪᴛx",
+  "logo": "https://graph.org/file/a00f89c5aa75735896e0f.jpg",
   "keywords": [
     "Chatbot",
     "mongodb",
@@ -24,7 +24,7 @@
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "A Pyrogram v2 String session from @Venom_String_robot",
+      "description": "A Pyrogram v2 String session.",
       "required": true,
       "value": ""
     },
@@ -34,7 +34,7 @@
       "value": ""
     },
     "OWNER_ID": {
-      "description": "User id of the user who will known as owner of the bot.",
+      "description": "User id chat bot control owner id.",
       "required": true,
       "value": ""
     }
