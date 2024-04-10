@@ -8,11 +8,11 @@ from pyrogram.enums import ChatAction
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import MONGO_URL
-from Venom import VenomX
-from Venom.modules.helpers import CHATBOT_ON, is_admins
+from ROYEDITX import ROYX
+from ROYEDITX.modules.helpers import CHATBOT_ON, is_admins
 
 
-@VenomX.on_cmd("chatbot", group_only=True)
+@ROYX.on_cmd("chatbot", group_only=True)
 @adminsOnly("can_delete_messages")
 async def chaton_(_, m: Message):
     await m.reply_text(
@@ -22,7 +22,7 @@ async def chaton_(_, m: Message):
     return
 
 
-@VenomX.on_message(
+@ROYX.on_message(
     (filters.text | filters.sticker | filters.group) & ~filters.private & ~filters.bot, group=4
 )
 async def chatbot_text(client: Client, message: Message):
@@ -111,7 +111,7 @@ async def chatbot_text(client: Client, message: Message):
                     )
 
 
-@VenomX.on_message(
+@ROYX.on_message(
     (filters.sticker | filters.group | filters.text) & ~filters.private & ~filters.bot, group=4
 )
 async def chatbot_sticker(client: Client, message: Message):
@@ -202,7 +202,7 @@ async def chatbot_sticker(client: Client, message: Message):
                     )
 
 
-@VenomX.on_message(
+@ROYX.on_message(
     (filters.text | filters.sticker | filters.group) & ~filters.private & ~filters.bot, group=4
 )
 async def chatbot_pvt(client: Client, message: Message):
@@ -248,7 +248,7 @@ async def chatbot_pvt(client: Client, message: Message):
                 await message.reply_text(f"{hey}")
 
 
-@VenomX.on_message(
+@ROYX.on_message(
     (filters.sticker | filters.sticker | filters.group)
     & ~filters.private
     & ~filters.bot,
