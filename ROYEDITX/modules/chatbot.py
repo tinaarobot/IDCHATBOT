@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import MONGO_URL
 from ROYEDITX import ROYX
-from ROYEDITX.modules.helpers import CHATBOT_ON, is_admins
+#from ROYEDITX.modules.helpers import CHATBOT_ON, is_admins
 
 
 @ROYX.on_cmd("chatbot", group_only=True)
