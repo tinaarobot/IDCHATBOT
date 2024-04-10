@@ -1,8 +1,8 @@
 from pyrogram.types import InlineKeyboardButton
 
 from config import SUPPORT_GRP, UPDATE_CHNL
-from Venom import OWNER
-from Venom import VenomX
+from ROYEDITX import OWNER
+from ROYEDITX import ROYX
 
 DEV_OP = [
     [
