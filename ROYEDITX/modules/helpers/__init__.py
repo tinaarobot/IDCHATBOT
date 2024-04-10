@@ -1,8 +1,6 @@
 from typing import Callable
-
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import Message
-
 from ROYEDITX import OWNER, ROYX
 
 
@@ -16,7 +14,3 @@ def is_admins(func: Callable) -> Callable:
             return await func(c, m)
 
     return non_admin
-
-
-#from .inline import *
-#from .read import *
