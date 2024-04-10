@@ -17,11 +17,11 @@ async def anony_boot():
     for all_module in ALL_MODULES:
         importlib.import_module("ROYEDITX.modules." + all_module)
 
-    LOGGER.info(f"@{ROYX.username} STARTED.")
+    LOGGER.info(f"♥︎ @{ROYX.username} STARTED.")
     await idle()
 
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(anony_boot())
-    LOGGER.info("BOT HAS BEEN STOPED...")
+    LOGGER.info("♥︎ BOT HAS BEEN STOPED...")
   
