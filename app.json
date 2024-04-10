@@ -1,7 +1,7 @@
 {
-  "name": "ChatBot",
+  "name": "ROY-ID-CHATBOT",
   "description": "A telegram chatting userbot",
-  "logo": "https://te.legra.ph/file/dc32c85de4f1ad9b3456b.jpg",
+  "logo": "https://graph.org/file/0bfe29d15e918917d1305.jpg",
   "keywords": [
     "Chatbot",
     "mongodb",
@@ -11,7 +11,7 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/venombolteop/ChatBot",
+  "repository": "https://github.com/tinaarobot/IDCHATBOT",
   "env": {
     "API_ID": {
       "description": "Get this value from my.telegram.org/apps.",
@@ -24,7 +24,7 @@
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "A Pyrogram v2 String session from @Venom_String_robot",
+      "description": "A Pyrogram v2 String session.",
       "required": true,
       "value": ""
     },
@@ -36,7 +36,7 @@
     "OWNER_ID": {
       "description": "User id of the user who will known as owner of the bot.",
       "required": true,
-      "value": "5822700831"
+      "value": "6922271843"
     }
   }
 }
