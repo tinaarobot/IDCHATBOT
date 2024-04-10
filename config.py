@@ -4,61 +4,50 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", 27353035))
-API_HASH = getenv("API_HASH", "cf2a75861140ceb746c7796e07cbde9e")
+API_ID = int(getenv("API_ID", None))
+API_HASH = getenv("API_HASH", None)
 STRING_SESSION = getenv("STRING_SESSION", None)
-OWNER_ID = int(getenv("OWNER_ID", "5822700831"))
+OWNER_ID = int(getenv("OWNER_ID", "6922271843"))
 MONGO_URL = getenv("MONGO_URL", None)
-SUPPORT_GRP = getenv("SUPPORT_GRP", "angel_world")
-UPDATE_CHNL = getenv("UPDATE_CHNL", "mr_editx")
-OWNER_USERNAME = getenv("OWNER_USERNAME", "PAWAN_IS_BACK")
+SUPPORT_GRP = getenv("SUPPORT_GRP", "THE_FRIENDZ")
+UPDATE_CHNL = getenv("UPDATE_CHNL", "ROY_EDITX")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "LOCO_X_PILOT")
 
-# Random Start Images
+
 IMG = [
-    "https://te.legra.ph/file/5bf629d10afd4af953585.jpg",
-    "https://te.legra.ph/file/7a321b99fe99d9d8b5117.jpg",
-    "https://te.legra.ph/file/c482a7e55b459ffe07502.jpg",
-    "https://telegra.ph//file/0879fbdb307005c1fa8ab.jpg",
-    "https://telegra.ph//file/19e3a9d5c0985702497fb.jpg",
-    "https://telegra.ph//file/b5fa277081dddbddd0b12.jpg",
-    "https://telegra.ph//file/96e96245fe1afb82d0398.jpg",
-    "https://telegra.ph//file/fb140807129a3ccb60164.jpg",
-    "https://telegra.ph//file/09c9ea0e2660efae6f62a.jpg",
-    "https://telegra.ph//file/3b59b15e1914b4fa18b71.jpg",
-    "https://telegra.ph//file/efb26cc17eef6fe82d910.jpg",
-    "https://telegra.ph//file/ab4925a050e07b00f63c5.jpg",
-    "https://telegra.ph//file/d169a77fd52b46e421414.jpg",
-    "https://telegra.ph//file/dab9fc41f214f9cded1bb.jpg",
-    "https://telegra.ph//file/e05d6e4faff7497c5ae56.jpg",
-    "https://telegra.ph//file/1e54f0fff666dd53da66f.jpg",
-    "https://telegra.ph//file/18e98c60b253d4d926f5f.jpg",
-    "https://telegra.ph//file/b1f7d9702f8ea590b2e0c.jpg",
-    "https://telegra.ph//file/7bb62c8a0f399f6ee1f33.jpg",
-    "https://telegra.ph//file/dd00c759805082830b6b6.jpg",
-    "https://telegra.ph//file/3b996e3241cf93d102adc.jpg",
-    "https://telegra.ph//file/610cc4522c7d0f69e1eb8.jpg",
-    "https://telegra.ph//file/bc97b1e9bbe6d6db36984.jpg",
-    "https://telegra.ph//file/2ddf3521636d4b17df6dd.jpg",
-    "https://telegra.ph//file/72e4414f618111ea90a57.jpg",
-    "https://telegra.ph//file/a958417dcd966d341bfe2.jpg",
-    "https://telegra.ph//file/0afd9c2f70c6328a1e53a.jpg",
-    "https://telegra.ph//file/82ff887aad046c3bcc9a3.jpg",
-    "https://telegra.ph//file/8ba64d5506c23acb67ff4.jpg",
-    "https://telegra.ph//file/8ba64d5506c23acb67ff4.jpg",
-    "https://telegra.ph//file/a7cba6e78bb63e1b4aefb.jpg",
-    "https://telegra.ph//file/f8ba75bdbb9931cbc8229.jpg",
-    "https://telegra.ph//file/07bb5f805178ec24871d3.jpg",
-    "https://telegra.ph/file/ec0ed654f5f5cefc90f95.jpg",
-    "https://telegra.ph/file/f6aa2a3659462401cb600.jpg",
-    "https://telegra.ph/file/0c3d91bcf75524a844883.jpg",
-    "https://telegra.ph/file/6c5df27e71e074f1c7123.jpg",
-    "https://telegra.ph/file/ff2ddc282fe7868e3cf73.jpg",
-    "https://telegra.ph/file/6130ea9373d5f60898a52.jpg",
-    "https://telegra.ph/file/45e5da1eab8f5892981ca.jpg",
+"https://graph.org/file/f76fd86d1936d45a63c64.jpg",
+"https://graph.org/file/69ba894371860cd22d92e.jpg",
+"https://graph.org/file/67fde88d8c3aa8327d363.jpg",
+"https://graph.org/file/3a400f1f32fc381913061.jpg",
+"https://graph.org/file/a0893f3a1e6777f6de821.jpg",
+"https://graph.org/file/5a285fc0124657c7b7a0b.jpg",
+"https://graph.org/file/25e215c4602b241b66829.jpg",
+"https://graph.org/file/a13e9733afdad69720d67.jpg",
+"https://graph.org/file/692e89f8fe20554e7a139.jpg",
+"https://graph.org/file/db277a7810a3f65d92f22.jpg",
+"https://graph.org/file/a00f89c5aa75735896e0f.jpg",
+"https://graph.org/file/f86b71018196c5cfe7344.jpg",
+"https://graph.org/file/a3db9af88f25bb1b99325.jpg",
+"https://graph.org/file/5b344a55f3d5199b63fa5.jpg",
+"https://graph.org/file/84de4b440300297a8ecb3.jpg",
+"https://graph.org/file/84e84ff778b045879d24f.jpg",
+"https://graph.org/file/a4a8f0e5c0e6b18249ffc.jpg",
+"https://graph.org/file/ed92cada78099c9c3a4f7.jpg",
+"https://graph.org/file/d6360613d0fa7a9d2f90b.jpg",
+"https://graph.org/file/37248e7bdff70c662a702.jpg",
+"https://graph.org/file/0bfe29d15e918917d1305.jpg",
+"https://graph.org/file/16b1a2828cc507f8048bd.jpg",
+"https://graph.org/file/e6b01f23f2871e128dad8.jpg",
+"https://graph.org/file/cacbdddee77784d9ed2b7.jpg",
+"https://graph.org/file/ddc5d6ec1c33276507b19.jpg",
+"https://graph.org/file/39d7277189360d2c85b62.jpg",
+"https://graph.org/file/5846b9214eaf12c3ed100.jpg",
+"https://graph.org/file/ad4f9beb4d526e6615e18.jpg",
+"https://graph.org/file/3514efaabe774e4f181f2.jpg",   
+
 ]
 
 
-# Random Stickers
 STICKER = [
     "CAACAgUAAx0CYlaJawABBy4vZaieO6T-Ayg3mD-JP-f0yxJngIkAAv0JAALVS_FWQY7kbQSaI-geBA",
     "CAACAgUAAx0CYlaJawABBy4rZaid77Tf70SV_CfjmbMgdJyVD8sAApwLAALGXCFXmCx8ZC5nlfQeBA",
