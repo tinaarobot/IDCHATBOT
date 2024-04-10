@@ -1,6 +1,6 @@
 {
   "name": "ROY-ID-CHATBOT",
-  "description": "A telegram chatting userbot",
+  "description": "✦ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴜsᴇʀ ɪᴅ ᴄʜᴀᴛ ʙᴏᴛ.",
   "logo": "https://graph.org/file/0bfe29d15e918917d1305.jpg",
   "keywords": [
     "Chatbot",
@@ -14,27 +14,27 @@
   "repository": "https://github.com/tinaarobot/IDCHATBOT",
   "env": {
     "API_ID": {
-      "description": "Get this value from my.telegram.org/apps.",
+      "description": "✦ ᴀᴘɪ ᴋᴇʏ, [♥︎ ᴊɪs ɪᴅ ᴋᴏ ʙᴏᴛ ʙɴᴀᴏ ᴜs ɪᴅ ᴋᴀ ᴀᴘɪ ᴋᴇʏ.]",
       "required": true,
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org/apps.",
+      "description": "✦ ᴀᴘɪ ʜᴀsʜ, [♥︎ ᴊɪs ɪᴅ ᴋᴏ ʙᴏᴛ ʙɴᴀᴏ ᴜs ɪᴅ ᴋᴀ ᴀᴘɪ ʜᴀsʜ.]",
       "required": true,
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "A Pyrogram v2 String session.",
+      "description": "✦ ᴘʏᴏɢʀᴀᴍ ᴠ2 sᴛʀɪɴɢ sᴇssɪᴏɴ.",
       "required": true,
       "value": ""
     },
     "MONGO_URL": {
-      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "description": "✦ ᴍᴏɴɢᴏᴅʙ ᴜʀʟ.",
       "required": true,
       "value": ""
     },
     "OWNER_ID": {
-      "description": "User id of the user who will known as owner of the bot.",
+      "description": "✦ ᴏᴡɴᴇʀ ɪᴅ, [ ᴀ ᴄᴏɴᴛʀᴏʟ ᴄʜᴀᴛ ɪᴅ ʙᴏᴛ.]",
       "required": true,
       "value": "6922271843"
     }
