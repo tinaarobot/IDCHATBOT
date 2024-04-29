@@ -14,3 +14,6 @@ def is_admins(func: Callable) -> Callable:
             return await func(c, m)
 
     return non_admin
+
+
+from .inline import *
