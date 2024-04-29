@@ -7,7 +7,7 @@ from ROYEDITX.database import vick
 
 @ROYX.on_callback_query()
 async def cb_handler(_, query: CallbackQuery):
-    elif query.data == "addchat":
+    if query.data == "addchat":
         user_id = query.from_user.id
         user_status = (await query.message.chat.get_member(user_id)).status
         if user_status not in [CMS.OWNER, CMS.ADMINISTRATOR]:
@@ -24,7 +24,7 @@ async def cb_handler(_, query: CallbackQuery):
                 await query.edit_message_text(
                     f"❖ ɪᴅ ᴄʜᴀᴛ-ʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ ➥ {query.from_user.mention}."
                 )
-    elif query.data == "rmchat":
+    if query.data == "rmchat":
         user_id = query.from_user.id
         user_status = (await query.message.chat.get_member(user_id)).status
         if user_status not in [CMS.OWNER, CMS.ADMINISTRATOR]:
