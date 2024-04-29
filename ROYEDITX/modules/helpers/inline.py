@@ -2,7 +2,7 @@ from pyrogram.types import InlineKeyboardButton
 
 from config import SUPPORT_GRP, UPDATE_CHNL
 from ROYEDITX import OWNER
-from ROYEDITX import VenomX
+from ROYEDITX import ROYX
 
 #####
 
