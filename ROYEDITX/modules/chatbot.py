@@ -14,7 +14,7 @@ from ROYEDITX import ROYX
 @adminsOnly("can_delete_messages")
 async def chaton_(_, m: Message):
     await m.reply_text(
-        f"✦ ᴄʜᴀᴛ ➠ {m.chat.title}.**",
+        f"⬤ ɢʀᴏᴜᴘ ɪᴅ ➥ {m.chat.title}\n\n⬤ ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.",
         reply_markup=InlineKeyboardMarkup(CHATBOT_ON),
     )
     return
